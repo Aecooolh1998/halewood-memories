@@ -1,0 +1,40 @@
+.navbar {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  width: 100%; /* Ensure the navbar spans 100% of the width */
+}
+
+.navbar-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around; /* Distribute links evenly across the navbar */
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-size: 1rem; /* Default font size for links */
+}
+
+.navbar-link:hover {
+  color: #007bff;
+}
+
+/* Add responsive styling for small devices */
+@media (max-width: 768px) {
+  .navbar-list {
+    flex-direction: column; /* Stack links vertically */
+    gap: 0.5rem; /* Reduce spacing between links */
+    align-items: center;
+  }
+
+  .navbar-link {
+    font-size: 0.9rem; /* Make links slightly smaller */
+  }
+}
